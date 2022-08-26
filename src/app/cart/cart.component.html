@@ -1,8 +1,12 @@
 <p>Hanwen Designed Cart!</p>
 
+<p>
+    <a routerLink="/shipping">Shipping Prices</a>
+</p>
+
 <div class="cart-item" *ngFor="let item of items">
     <span>{{item.name}}</span>
     <span>{{item.price | currency}}</span>
 </div>
 
-<p>The total price in the cart is : {{totalPrice}}</p>
+<p>The total price in the cart is : {{totalPrice | currency}}</p>
