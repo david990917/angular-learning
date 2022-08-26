@@ -1,1 +1,8 @@
-<p>cart works!</p>
+<p>Hanwen Designed Cart!</p>
+
+<div class="cart-item" *ngFor="let item of items">
+    <span>{{item.name}}</span>
+    <span>{{item.price | currency}}</span>
+</div>
+
+<p>The total price in the cart is : {{totalPrice}}</p>

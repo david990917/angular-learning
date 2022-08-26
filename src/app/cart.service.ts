@@ -11,6 +11,7 @@ export class CartService {
 
   addToCart(product: Product) {
     this.items.push(product);
+    this.items.sort((a, b) => -(a.price - b.price));
   }
 
   getItems() {
@@ -20,5 +21,13 @@ export class CartService {
   clearCart() {
     this.items = [];
     return this.items;
+  }
+
+  getTotalPrice() {
+    let totalPrice = 0;
+    for (let item of this.items) {
+      totalPrice += item.price;
+    }
+    return totalPrice;
   }
 }
