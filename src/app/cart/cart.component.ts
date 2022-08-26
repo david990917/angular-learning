@@ -13,6 +13,7 @@ export class CartComponent implements OnInit {
   items = this.cartService.getItems();
   totalPrice = this.cartService.getTotalPrice();
 
+
   checkoutForm = this.formBuilder.group({
     name: '',
     address: ''
@@ -29,6 +30,7 @@ export class CartComponent implements OnInit {
 
   onSubmit(): void {
     this.items = this.cartService.clearCart();
+    this.totalPrice = this.cartService.getTotalPrice();
     console.warn("Your order has been submitted", this.checkoutForm.value);
     this.checkoutForm.reset();
   }
