@@ -11,7 +11,7 @@ export class CartService {
 
   addToCart(product: Product) {
     this.items.push(product);
-    this.items.sort((a, b) => -(a.price - b.price));
+    this.items.sort((a, b) => -(a.price - b.price)); // sort by price in descending order
   }
 
   getItems() {
