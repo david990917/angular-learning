@@ -57,11 +57,11 @@ const steps = [
       on: "bottom"
     },
     buttons: [
-      {
-        classes: "cancel-button",
-        text: "Exit",
-        type: "cancel"
-      },
+      // {
+      //   classes: "cancel-button",
+      //   text: "Exit",
+      //   type: "cancel"
+      // },
       {
         classes: "shepherd-button-primary",
         text: "Back",
@@ -84,11 +84,6 @@ const steps = [
       on: "bottom"
     },
     buttons: [
-      {
-        classes: "cancel-button",
-        text: "Exit",
-        type: "cancel"
-      },
       {
         classes: "shepherd-button-primary",
         text: "Back",
@@ -113,11 +108,6 @@ const steps = [
     },
     buttons: [
       {
-        classes: "cancel-button",
-        text: "Exit",
-        type: "cancel"
-      },
-      {
         classes: "shepherd-button-primary",
         text: "Back",
         type: "back"
@@ -141,10 +131,28 @@ const steps = [
     },
     buttons: [
       {
-        classes: "cancel-button",
-        text: "Exit",
-        type: "cancel"
+        classes: "shepherd-button-primary",
+        text: "Back",
+        type: "back"
       },
+      {
+        classes: "shepherd-button-primary",
+        text: "Next",
+        type: "next"
+      }
+    ],
+    classes: '',
+    highlightClass: "highlight",
+
+  }, {
+    id: "example-step5",
+    title: "Step 5",
+    text: "Hanwen's demo5",
+    attachTo: {
+      element: ".example-step5",
+      on: "bottom"
+    },
+    buttons: [
       {
         classes: "shepherd-button-primary",
         text: "Back",
