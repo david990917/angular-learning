@@ -10,7 +10,9 @@
     <span>{{item.price | currency}}</span>
 </div>
 
-<p>The total price in the cart is : {{totalPrice | currency}}</p>
+<div class="example-step6">
+    <p>The total price in the cart is : {{totalPrice | currency}}</p>
+</div>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
     <div>

@@ -19,14 +19,14 @@ export class AppComponent implements AfterViewInit {
     this.shepherdService.start();
   }
 
+
   steps = [
     {
       id: "example-step1",
       title: "Step 1",
       text: "Welcome to Hanwen's projects",
       attachTo: {
-        element: ".example-step1",
-        on: "bottom"
+        element: ".example-step1", on: 'auto' as const,
       },
       buttons: [
         // {
@@ -52,8 +52,7 @@ export class AppComponent implements AfterViewInit {
       title: "Step 2",
       text: "Hanwen's demo2",
       attachTo: {
-        element: ".example-step2",
-        on: "bottom"
+        element: ".example-step2", on: 'auto' as const,
       },
       buttons: [
         {
@@ -75,8 +74,7 @@ export class AppComponent implements AfterViewInit {
       title: "Step 3",
       text: "Hanwen's demo3",
       attachTo: {
-        element: ".example-step3",
-        on: "bottom"
+        element: ".example-step3", on: 'auto' as const,
       },
       buttons: [
         {
@@ -98,8 +96,8 @@ export class AppComponent implements AfterViewInit {
       title: "Step 4",
       text: "Hanwen's demo4",
       attachTo: {
-        element: ".example-step4",
-        on: "bottom"
+        element: ".example-step4", on: 'auto' as const,
+
       },
       buttons: [
         {
@@ -129,8 +127,31 @@ export class AppComponent implements AfterViewInit {
       title: "Step 5",
       text: "Hanwen's demo5",
       attachTo: {
-        element: ".example-step5",
-        on: "bottom"
+        element: ".example-step5", on: 'bottom' as const,
+        // on: "bottom"
+      },
+      buttons: [
+        {
+          classes: "shepherd-button-primary",
+          text: "Back",
+          type: "back"
+        },
+        {
+          classes: "shepherd-button-primary",
+          text: "Next",
+          type: "next"
+        }
+      ],
+      classes: '',
+      highlightClass: "highlight",
+
+    }, {
+      id: "example-step6",
+      title: "Step 6",
+      text: "Hanwen's demo6",
+      attachTo: {
+        element: ".example-step6", on: 'bottom' as const,
+        // on: "bottom"
       },
       buttons: [
         {
