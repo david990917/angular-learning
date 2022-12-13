@@ -49,9 +49,9 @@ const tour = {
 
 const steps = [
   {
-    id: ".example-step1",
+    id: "example-step1",
     title: "Step 1",
-    text: "Hanwen's demo",
+    text: "Welcome to Hanwen's projects",
     attachTo: {
       element: ".example-step1",
       on: "bottom"
